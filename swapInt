@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class max 
+{
+    public static void main(String args[]) 
+    {
+        Scanner keyboard=new Scanner(System.in);
+        int num1;
+        int num2;
+        System.out.println("Enter 2 integers ");
+        num1=keyboard.nextInt();
+        num2=keyboard.nextInt();
+        if(num1>num2)
+        {
+            int x=num1;
+            num1=num2;
+            num2=x;
+        }
+        System.out.println("The first integer is "+num1+" and the second one is "+num2+".");
+    }
+}
